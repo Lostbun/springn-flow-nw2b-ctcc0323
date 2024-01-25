@@ -734,10 +734,16 @@ public class selectionpage extends javax.swing.JFrame {
 
     private void backselectionpageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backselectionpageActionPerformed
       
-    //When back button is pressed it will show loginpage
-        loginpage lp = new loginpage();
-        lp.setVisible(true);
-        this.dispose();
+                       int p =  JOptionPane.showConfirmDialog(null, "Do you want to logout?", "Option",JOptionPane.YES_NO_OPTION);
+
+            if(p == 0){
+      
+                loginpage lp = new loginpage();
+               lp.setVisible(true);
+               this.dispose();
+            }else{
+                
+            }
     }//GEN-LAST:event_backselectionpageActionPerformed
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
